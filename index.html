@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Visa Appointment Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>US Visa Appointment Tracker</h1>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="date" id="appointmentDate" required>
+
+            <button type="submit">Track Appointment</button>
+        </form>
+        <div id="appointmentsList">
+            <h2>Scheduled Appointments</h2>
+            <ul id="appointments"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
